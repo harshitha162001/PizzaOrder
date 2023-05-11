@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Passes";
+}
+
+
+
+
+@{
+    ViewData["Title"] = "Passes";
+}
+
+@{
+    Layout = "_Layout";
+}
+
+
+<h1 style="text-align:center;color:deeppink">Thankyou @ViewBag.result.UserName for Shoping </h1>
+<body>
+
+
+    <table style="margin-left:auto;margin-right:auto;" border="1" cellpadding="10px" cellspacing="0">
+        <h2 style="color:plum"> More Details</h2>
+        <h4><strong>Email Id : </strong>@ViewBag.result.Email</h4>
+
+        <h4><strong>Address : </strong>@ViewBag.result.Address</h4>
+        <h4> <strong>Country : </strong>@ViewBag.result.Country</h4>
+        <h4><strong>State : </strong>@ViewBag.result.State</h4>
+
+
+    </table>
+    <br />
+    <h3 style="text-align:center;">Total Amount is: @ViewBag.total</h3>
+    <br />
+    <h1 style="text-align:center;color:forestgreen"><strong>Payment Is Successfull</strong></h1>
+
+
+
+</body>
+<td><a asp-controller="Product" asp-action="Index" class="btn btn-outline-primary">ContinueShopping</a></td>
+<br />
+<td><a asp-controller="Cart" asp-action="Checkout" class="btn btn-outline-success">  Back to Checkout  </a></td>
+
+
+
